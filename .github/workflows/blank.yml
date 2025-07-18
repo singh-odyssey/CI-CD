@@ -26,7 +26,7 @@ jobs:
           # pip install -r requirements.txt
 
       - name: Run tests
-        run: python -m unittest discover
+        run: python -m unittest discover -s . -p "test_*.py"
 
       - name: Commit and push changes if any
         run: |
